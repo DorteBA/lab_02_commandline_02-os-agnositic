@@ -18,7 +18,8 @@ $ echo hello
 
 Copy and paste the output below.
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ echo hello
+hello
 
 
 ==========
@@ -28,7 +29,8 @@ $ echo hello there
 
 Copy and paste the output below.
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ echo hello there
+hello there
 
 
 ==========
@@ -38,7 +40,8 @@ $ echo good mornin'
 
 Copy and paste the output below.
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ echo good mornin'
+>
 
 
 ==========
@@ -56,7 +59,7 @@ $ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ echo "good mornin'"good mornin'
 
 
 ==========
@@ -66,7 +69,7 @@ $ echo *
 
 What happens?
 ----------
-
+It leads you to other filies. 
 
 
 ==========
@@ -74,7 +77,7 @@ What happens?
 
 Write the command that you used below:
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ clear
 
 
 ==========
@@ -87,7 +90,13 @@ $ curl google.com
 
 Copy and paste the output below.
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ curl google.com
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 
 ==========
@@ -97,7 +106,8 @@ $ curl www.google.com
 
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ curl www.google.com
+<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="en"><head><meta content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for." name="description"><meta content="noodp" name="robots"><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="/logos/doodles/2021/international-womens-day-2021-6753651837108879.3-l.png" itemprop="image"><meta content="International Women's Day 2021" property="twitter:title">
 
 
 ==========
@@ -105,7 +115,10 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 
 Write the command you used below.  Also copy and paste the output below.
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ curl -o filename.txt www.google.com
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 14847    0 14847    0     0   2941      0 --:--:--  0:00:05 --:--:--  4205
 
 
 ==========
@@ -113,7 +126,8 @@ Write the command you used below.  Also copy and paste the output below.
 
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ pwd
+/home/dortebien
 
 
 ==========
@@ -121,7 +135,7 @@ Write the command you used to determine your directory.  Also, copy and paste th
 
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
-
+~
 
 
 ==========
@@ -137,7 +151,10 @@ Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ curl -o mtec1003-lab-02.zip https://filebin.net/retypweqyn7h8vrg/mtec1003-lab-02.zip?t=a0ulqlss
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  3375    0  3375    0     0   3295      0 --:--:--  0:00:01 --:--:--  3295
 
 
 ==========
@@ -145,6 +162,7 @@ Write down the command that you used to download the file below.  Additionally, 
 
 Write down the command that you used to uncompress the file.
 ----------
+dortebien@DESKTOP-1CDSC8N:~$ unzip mtec1003-lab-02.zip
 
 
 
@@ -153,7 +171,8 @@ Write down the command that you used to uncompress the file.
 
 Copy and paste the output below.
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ ls
+Desktop  Documents  Music  Pictures  Videos  dortebienaime  filename.txt  mtec1003  mtec1003-lab-02.zip  stuff  workspace.code-workspace
 
 
 ==========
@@ -164,7 +183,16 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ mkdir stuff
+mkdir: cannot create directory ‘stuff’: File exists
+dortebien@DESKTOP-1CDSC8N:~$ ls
+Desktop        filename.txt
+Documents      mtec1003
+Music          mtec1003-lab-02.zip
+Pictures       stuff
+Videos         workspace.code-workspace
+dortebienaime
+dortebien@DESKTOP-1CDSC8N:~/stuff$ 
 
 
 ==========
@@ -176,7 +204,9 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ cd stuff
+dortebien@DESKTOP-1CDSC8N:~/stuff$ echo "hi" > hello.txtdortebien@DESKTOP-1CDSC8N:~/stuff$ ls
+hello.txt
 
 
 ==========
@@ -188,7 +218,8 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ ls
+Desktop  Documents  Music  Pictures  Videos  dortebienaime  filename.txt  mtec1003  mtec1003-lab-02.zip  stuff  stuff.tar  workspace.code-workspace
 
 
 ==========
@@ -198,7 +229,8 @@ $ tar -cvf stuff.tar stuff
 
 Copy and paste the output below.
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ ls
+Desktop  Documents  Music  Pictures  Videos  dortebienaime  filename.txt  mtec1003  mtec1003-lab-02.zip  stuff  stuff.tar  workspace.code-workspace
 
 
 ==========
@@ -206,7 +238,14 @@ Copy and paste the output below.
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ ls
+Desktop        mtec1002-lab-02
+Documents      mtec1003
+Music          mtec1003-lab-02.zip
+Pictures       stuff
+Videos         stuff.tar
+dortebienaime  workspace.code-workspace
+filename.txt
 
 
 ==========
@@ -216,7 +255,8 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~$ ls
+Desktop  Documents  Music  Pictures  Videos  dortebienaime  filename.txt  mtec1003  mtec1003-lab-02.zip  stuff  stuff.tar.gz  workspace.code-workspace
 
 
 ==========
@@ -230,7 +270,8 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~/mtec1002-lab-02$ ls
+stuff.tar.gz
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -239,7 +280,8 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
-
+dortebien@DESKTOP-1CDSC8N:~/mtec1002-lab-02$ tar -xvf stuff.tar.gzstuff/
+stuff/hello.txt
 
 
 ==========
@@ -258,9 +300,15 @@ REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 
 Write out the commands that you used to do this.
 ----------
+dortebien@DESKTOP-1CDSC8N:~$ curl -o filename.txt https://filebin.net/retypweqyn7h8vrg/secret.tar.gz?t=5jze7uyg  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  3365    0  3365    0     0   1049      0 --:--:--  0:00:03 --:--:--  1048
+dortebien@DESKTOP-1CDSC8N:~$ unzip https://filebin.net/retypweqyn7h8vrg/secret.tar.gz?t=5jze7uyg
 
 
 
 ==========
 26. How many files were in the archive.  What were their names?  Write out your answers below.
 ----------
+dortebien@DESKTOP-1CDSC8N:~$ ls
+Desktop  Documents  Music  Pictures  Videos  dortebienaime  filename.txt  mtec1002-lab-02  mtec1003  mtec1003-lab-02.zip  stuff  workspace.code-workspace
